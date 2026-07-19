@@ -1,0 +1,51 @@
+# PoleProof
+
+> PoleProof audits make-ready and pole attachment invoices for the companies that build broadband. It checks every charge on an invoice or estimate against the client's signed pole attachment agreement and the cost-allocation rules that actually govern it, then returns a clear, dispute-ready findings report. The goal is simple: make sure builders only pay what they actually owe on make-ready, and recover what they were overbilled.
+
+## What PoleProof does
+
+PoleProof reviews make-ready and pole attachment invoices (or estimates, before they are paid) line by line. Each charge is compared against:
+
+- The client's own signed pole attachment agreement.
+- 47 U.S.C. Section 224 and 47 CFR Part 1, Subpart J, for FCC-regulated investor-owned utility poles.
+- The applicable state cost-allocation rule, for electric cooperative and municipal poles that fall outside FCC jurisdiction.
+
+The output is a findings report that shows, per line item, what was invoiced, what is actually allowable, and where the difference is. Every finding cites the specific agreement section or regulation it rests on. It is a factual and contractual review, not legal advice and not a legal filing.
+
+## Who PoleProof is for
+
+Fiber ISPs, competitive broadband builders, electric cooperatives, municipal broadband builders, and BEAD subgrantees who are paying make-ready and pole attachment costs and want to know those charges are correct before the money leaves the build budget.
+
+## How it works
+
+1. The client sends one invoice or estimate, plus their signed pole attachment agreement. Prior invoices help but are not required.
+2. PoleProof audits every line item against the agreement and the cost-allocation rule that governs it.
+3. The client gets a dispute-ready findings report, typically within 10 business days: what is allowed, what is not, and what to do next, whether that is a clean bill or a credit request.
+
+There is no portal to log into and no software to install. Documents in, findings out.
+
+## Pricing model
+
+Right now, PoleProof is running a small number of free concierge audits to validate the model against real invoices. There is no subscription and no obligation today. Going forward, the model is contingency based: clients pay out of what is actually recovered, not up front.
+
+## Why it is trustworthy
+
+- Grounded in the actual rules. Nothing is asserted without a citation back to the agreement or the governing regulation.
+- Confidential by default. Documents are reviewed solely to produce the client's findings report and are not shared beyond that purpose, other than in de-identified, aggregated form that improves PoleProof's benchmark data.
+- Honest about scope. Every report states plainly what was and was not reviewed. Anything that needs to be formally filed is handled by the client's own counsel.
+
+## Key terms
+
+- Make-ready: the work a pole owner requires (and bills for) to prepare a pole for a new attachment, such as moving existing lines or replacing a pole.
+- Pole attachment: the physical connection of a broadband line to a utility pole, governed by a signed agreement and by federal or state cost rules.
+- Cost allocation: the rules that decide how much of a shared cost (like a pole replacement) a new attacher can properly be charged.
+
+## Pages
+
+- [Home](https://getpoleproof.com/): What PoleProof does, how the audit works, the model, and FAQs.
+- [Privacy Policy](https://getpoleproof.com/privacy.html): How client documents and data are handled.
+- [Terms of Service](https://getpoleproof.com/terms.html): Terms for using PoleProof.
+
+## Contact
+
+Email hello@getpoleproof.com to request a free concierge audit. Send one invoice or estimate plus the signed pole attachment agreement to get started.
