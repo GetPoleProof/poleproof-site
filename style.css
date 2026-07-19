@@ -109,6 +109,14 @@ section{padding:64px 0;}
 .trust-card h3{font-size:16.5px; margin-bottom:8px;}
 .trust-card p{color:var(--grey); font-size:14.5px; margin:0;}
 
+/* FAQ */
+.faq-list{margin-top:8px;}
+.faq-item{padding:22px 0; border-bottom:1px solid var(--line);}
+.faq-item:last-child{border-bottom:none;}
+.faq-item h3{font-size:17px; margin-bottom:8px;}
+.faq-item p{color:var(--grey); font-size:15px; margin:0; max-width:64ch;}
+.faq-item p a{color:var(--teal-dark);}
+
 /* CTA band */
 .cta-band{background:var(--indigo); border-radius:12px; padding:48px 40px; text-align:center;}
 .cta-band h2{color:#fff; font-size:28px;}
