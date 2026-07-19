@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PoleProof — Make-Ready & Pole Attachment Invoice Audits</title>
 <meta name="description" content="PoleProof audits make-ready and pole attachment invoices against your agreement and FCC cost-allocation rules, and recovers what shouldn't have been billed.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="PoleProof LLC">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -35,22 +37,46 @@
       "legalName": "PoleProof LLC",
       "url": "https://getpoleproof.com/",
       "logo": "https://getpoleproof.com/apple-touch-icon.png",
+      "image": "https://getpoleproof.com/og-image.png",
       "email": "hello@getpoleproof.com",
+      "foundingDate": "2026",
       "description": "PoleProof audits make-ready and pole attachment invoices against signed pole attachment agreements and FCC cost-allocation rules, recovering overcharges for fiber ISPs, electric cooperatives, and municipal broadband builders.",
-      "areaServed": "US"
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "sameAs": [ "https://www.linkedin.com/company/poleproof" ],
+      "knowsAbout": [
+        { "@type": "Thing", "name": "Pole attachment cost allocation (47 U.S.C. §224)", "url": "https://www.law.cornell.edu/uscode/text/47/224" },
+        { "@type": "Thing", "name": "FCC pole attachment complaint procedures (47 CFR Part 1, Subpart J)", "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-1/subpart-J" },
+        "Make-ready invoice auditing",
+        "Broadband make-ready cost recovery",
+        "BEAD program pole attachment costs",
+        "Electric cooperative and municipal pole attachment rates"
+      ]
     },
     {
       "@type": "WebSite",
       "@id": "https://getpoleproof.com/#website",
       "url": "https://getpoleproof.com/",
       "name": "PoleProof",
+      "inLanguage": "en-US",
       "publisher": { "@id": "https://getpoleproof.com/#organization" }
     },
     {
+      "@type": "WebPage",
+      "@id": "https://getpoleproof.com/#webpage",
+      "url": "https://getpoleproof.com/",
+      "name": "PoleProof — Make-Ready & Pole Attachment Invoice Audits",
+      "isPartOf": { "@id": "https://getpoleproof.com/#website" },
+      "about": { "@id": "https://getpoleproof.com/#service" },
+      "inLanguage": "en-US",
+      "description": "PoleProof audits make-ready and pole attachment invoices against your agreement and FCC cost-allocation rules, and recovers what shouldn't have been billed."
+    },
+    {
       "@type": "Service",
+      "@id": "https://getpoleproof.com/#service",
       "serviceType": "Pole attachment and make-ready invoice audit",
+      "name": "Make-ready & pole attachment invoice audit",
       "provider": { "@id": "https://getpoleproof.com/#organization" },
-      "areaServed": "US",
+      "areaServed": { "@type": "Country", "name": "United States" },
       "description": "Line-by-line audit of make-ready and pole attachment invoices against the client's signed agreement and applicable cost-allocation rules (47 U.S.C. §224 and 47 CFR Part 1, Subpart J for FCC-regulated poles, or state rules for cooperative and municipal poles), producing a dispute-ready findings report.",
       "audience": {
         "@type": "Audience",
