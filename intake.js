@@ -12,9 +12,8 @@
   nda.addEventListener('change', syncGate);
   syncGate();
 
-  // Track selected filenames so they can be listed in the handoff email
+  // Track selected filenames for the email-fallback body
   var selected = {};
-
   var zones = document.querySelectorAll('[data-dz]');
   Array.prototype.forEach.call(zones, function (zone) {
     var input = zone.querySelector('input[type=file]');
@@ -57,9 +56,7 @@
     return list;
   }
 
-  // Email-first launch: compose a prefilled message to the intake inbox.
-  // Files are attached by the sender in their mail client (mailto cannot carry attachments).
-  // Upgrade path: POST fields + files to a same-origin handler (form-action 'self'), e.g. /api/intake.
+  // Email fallback used when the upload endpoint is unavailable or the payload is too large
   function buildMailto() {
     var company = val('company');
     var subject = 'Free audit request' + (company ? ' for ' + company : '');
@@ -88,17 +85,43 @@
     return 'mailto:audit@getpoleproof.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
   }
 
+  function setText(id, s) { var el = document.getElementById(id); if (el) el.textContent = s; }
+  function reveal() {
+    form.style.display = 'none';
+    success.style.display = 'block';
+    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  function showUploaded() {
+    setText('success-h', 'Your documents are in.');
+    setText('success-p', 'Thank you. Your details and documents reached the PoleProof intake team. Your findings report comes back within 10 business days, and we will email you at the address you gave if anything is missing.');
+    setText('success-sub', 'A confirmation will come from audit@getpoleproof.com.');
+    reveal();
+  }
+  function showEmail() {
+    try { window.location.href = buildMailto(); } catch (err) { /* no mail handler: on-page fallback text is shown */ }
+    setText('success-h', 'One last step: send your email.');
+    setText('success-p', 'We have opened a message to audit@getpoleproof.com with your details filled in. Attach the documents you have, your invoice or estimate and your signed agreement if available, then hit send. Your findings report comes back within 10 business days.');
+    setText('success-sub', 'If your email app did not open, email your documents to audit@getpoleproof.com.');
+    reveal();
+  }
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (!nda.checked) return;
     if (!form.checkValidity()) { form.reportValidity(); return; }
 
-    try { window.location.href = buildMailto(); } catch (err) { /* no mail handler: on-page fallback is shown */ }
+    var original = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
 
-    form.style.display = 'none';
-    if (success) {
-      success.style.display = 'block';
-      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
+    var fd = new FormData(form);
+    fd.append('nda_accepted', 'true');
+    fd.append('stage_label', stageLabel());
+
+    // Primary: post directly to the same-origin handler. Fallback: email compose.
+    fetch('/api/intake', { method: 'POST', body: fd })
+      .then(function (resp) { if (resp && resp.ok) { showUploaded(); } else { showEmail(); } })
+      .catch(function () { showEmail(); })
+      .then(function () { submitBtn.disabled = false; submitBtn.textContent = original; });
   });
 })();
