@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start your free audit — PoleProof</title>
+<meta name="description" content="Send your make-ready or pole attachment invoice and agreement for a free, independent PoleProof audit. Findings within 10 business days.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Intake-specific styles (CSP allows inline styles). Shared tokens/components come from style.css. */
+.intake-hero{padding:60px 0 40px;}
+.trustline{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--grey);margin-top:20px;}
+.intake-form-section{padding:24px 0 72px;}
+.form-shell{max-width:680px;margin:0 auto;}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px 28px 28px;box-shadow:0 18px 40px -20px rgba(27,20,64,0.30);}
+.fblock{padding:24px 0;border-top:1px solid var(--line);}
+.fblock:first-child{border-top:none;}
+.fblock-title{display:flex;align-items:center;gap:12px;font-family:'Zilla Slab',serif;font-weight:700;font-size:19px;color:var(--indigo);margin:0 0 16px;}
+.fblock-title .bnum{width:30px;height:30px;border-radius:50%;background:var(--indigo);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+label.fl{display:block;font-size:13.5px;font-weight:600;color:var(--indigo);margin:0 0 6px;}
+label.fl .opt{font-weight:400;color:var(--grey-2);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.04em;text-transform:uppercase;margin-left:6px;}
+.req{color:var(--teal-dark);}
+input.fi,textarea.fi{width:100%;font-family:'IBM Plex Sans',sans-serif;font-size:15px;color:var(--indigo);background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px 13px;}
+.fi:focus{outline:2px solid var(--teal-dark);outline-offset:1px;border-color:var(--teal-dark);}
+textarea.fi{min-height:88px;resize:vertical;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.field{margin-bottom:16px;}
+.field:last-child{margin-bottom:0;}
+.nda-box{background:var(--paper-2);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:8px;padding:16px 18px;}
+.nda-check{display:flex;gap:12px;align-items:flex-start;}
+.nda-check input{margin-top:3px;width:18px;height:18px;flex:0 0 auto;accent-color:var(--teal-dark);}
+.nda-check label{font-size:14.5px;color:var(--indigo);}
+.nda-help{font-size:12.5px;color:var(--grey);margin:10px 0 0;}
+fieldset{border:0;margin:0;padding:0;}
+.pills{display:flex;flex-wrap:wrap;gap:10px;}
+.pill{position:relative;}
+.pill input{position:absolute;opacity:0;pointer-events:none;}
+.pill span{display:block;border:1px solid var(--line);border-radius:7px;padding:11px 15px;font-size:14px;cursor:pointer;background:#fff;color:var(--indigo);}
+.pill input:checked + span{border-color:var(--teal-dark);background:rgba(14,165,163,0.10);font-weight:600;}
+.pill input:focus-visible + span{outline:2px solid var(--teal-dark);outline-offset:1px;}
+.dz{display:block;position:relative;border:1.5px dashed var(--line);border-radius:9px;padding:16px;margin-bottom:12px;cursor:pointer;background:#fff;transition:border-color .15s,background .15s;}
+.dz:hover{border-color:var(--teal-dark);}
+.dz.drag{border-color:var(--teal-dark);background:rgba(14,165,163,0.07);}
+.dz.has-file{border-style:solid;border-color:var(--teal-dark);background:rgba(14,165,163,0.05);}
+.dz .sr-file{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;}
+.dz-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;}
+.dz-name{font-size:14.5px;font-weight:600;color:var(--indigo);}
+.dz-badge{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.05em;text-transform:uppercase;padding:2px 8px;border-radius:20px;flex:0 0 auto;}
+.dz-badge.rq{background:var(--teal-dark);color:#fff;}
+.dz-badge.rec{background:var(--indigo);color:#fff;}
+.dz-badge.op{background:var(--paper-2);color:var(--grey);}
+.dz-desc{font-size:12.5px;color:var(--grey);margin:5px 0 0;}
+.dz-files{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--teal-dark);margin:8px 0 0;word-break:break-word;}
+.reassure{font-size:12.5px;color:var(--grey);background:var(--paper-2);border-radius:7px;padding:12px 14px;margin:18px 0 0;}
+.submit-btn{display:block;width:100%;margin-top:20px;background:var(--teal-dark);color:#fff;border:0;border-radius:6px;font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:16px;padding:16px;cursor:pointer;transition:background .15s;}
+.submit-btn:hover:not(:disabled){background:var(--indigo);}
+.submit-btn:disabled{background:#cfcabb;color:#7d7890;cursor:not-allowed;}
+.fallback{text-align:center;font-size:13.5px;color:var(--grey);margin:18px 0 0;}
+.success-panel{display:none;text-align:center;padding:48px 10px;}
+.success-panel .ico{width:58px;height:58px;margin:0 auto 16px;}
+.success-panel h2{font-size:26px;margin:0 0 12px;}
+.success-panel p{color:var(--grey);font-size:15.5px;max-width:48ch;margin:0 auto 10px;}
+@media(max-width:600px){.grid2{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html">POLE<span>PROOF</span></a>
+    <a class="btn" href="mailto:audit@getpoleproof.com?subject=Documents%20for%20a%20free%20audit">Email it instead</a>
+  </div>
+</nav>
+
+<header class="hero intake-hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Free concierge audit</span>
+    <h1>Start your free audit.</h1>
+    <p class="lede">Send the invoice or estimate you want checked, plus your signed pole attachment agreement. PoleProof reviews every line against your contract and the cost-allocation rules that govern each charge, then returns a dispute-ready finding within 10 business days. No cost, no obligation.</p>
+    <a class="btn" href="#intake">Start my audit</a>
+    <div class="trustline">Every line checked against your agreement &nbsp;&middot;&nbsp; Findings in 10 business days &nbsp;&middot;&nbsp; Covered by a mutual NDA</div>
+  </div>
+</header>
+
+<hr class="divider">
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps, ten business days.</h2>
+      <p>Send documents, get a finding. No portal to log into.</p>
+    </div>
+    <div class="steps">
+      <div class="step-row">
+        <div class="step-num">01</div>
+        <div><h3>Share your documents</h3><p>Share your invoice or estimate and your signed pole attachment agreement using the form below.</p></div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">02</div>
+        <div><h3>PoleProof audits every line</h3><p>Each charge is checked against your agreement and the cost-allocation rule that actually governs it, not guesswork.</p></div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">03</div>
+        <div><h3>You get a dispute-ready finding</h3><p>Within 10 business days: what is allowed, what is not, and the exact next step to recover or avoid it.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="intake-form-section" id="intake">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Your free audit</span>
+      <h2>Send your documents</h2>
+      <p>The more you send, the sharper the finding. If you only have part of it, send what you have; missing items just mean a narrower or more conservative finding, not a delay.</p>
+    </div>
+
+    <div class="form-shell">
+      <form class="form-card" id="intake-form" novalidate>
+
+        <div class="fblock">
+          <div class="fblock-title"><span class="bnum">1</span> Agree to the mutual NDA</div>
+          <div class="nda-box">
+            <div class="nda-check">
+              <input type="checkbox" id="nda-agree">
+              <label for="nda-agree">I have read and, on behalf of my company, agree to the mutual <a href="nda.html" target="_blank" rel="noopener">Non-Disclosure Agreement</a>.</label>
+            </div>
+            <p class="nda-help">This protects both sides before anything confidential changes hands. The upload and submit stay locked until this is in place.</p>
+          </div>
+        </div>
+
+        <div class="fblock">
+          <div class="fblock-title"><span class="bnum">2</span> Tell us about the charge</div>
+          <div class="grid2">
+            <div class="field">
+              <label class="fl" for="name">Full name <span class="req">*</span></label>
+              <input class="fi" type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label class="fl" for="company">Company <span class="req">*</span></label>
+              <input class="fi" type="text" id="company" name="company" required autocomplete="organization">
+            </div>
+          </div>
+          <div class="grid2">
+            <div class="field">
+              <label class="fl" for="email">Work email <span class="req">*</span></label>
+              <input class="fi" type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label class="fl" for="owner">Pole owner <span class="opt">Recommended</span></label>
+              <input class="fi" type="text" id="owner" name="owner" placeholder="Utility or telecom that issued the charge">
+            </div>
+          </div>
+          <div class="field">
+            <label class="fl" for="amount">Approximate amount under review <span class="opt">Optional</span></label>
+            <input class="fi" type="text" id="amount" name="amount" placeholder="e.g. $18,400">
+          </div>
+          <div class="field">
+            <fieldset>
+              <label class="fl">Which best describes it? <span class="req">*</span></label>
+              <div class="pills">
+                <label class="pill"><input type="radio" name="stage" value="estimate" required><span>A pending estimate (before payment)</span></label>
+                <label class="pill"><input type="radio" name="stage" value="invoice"><span>An invoice I have already received (after payment)</span></label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="fblock">
+          <div class="fblock-title"><span class="bnum">3</span> Upload your documents</div>
+
+          <label class="dz" data-dz>
+            <div class="dz-top"><span class="dz-name">Invoice or cost estimate</span><span class="dz-badge rq">Required</span></div>
+            <p class="dz-desc">The make-ready or attachment charge you want reviewed. PDF preferred; a clear scan or photo is fine.</p>
+            <p class="dz-files" data-files></p>
+            <input class="sr-file" type="file" name="invoice" accept=".pdf,.png,.jpg,.jpeg,.tiff,.heic" multiple required>
+          </label>
+
+          <label class="dz" data-dz>
+            <div class="dz-top"><span class="dz-name">Signed pole attachment agreement</span><span class="dz-badge rec">Recommended</span></div>
+            <p class="dz-desc">The single most important document. Without it we can only check against public cost rules, not your negotiated terms.</p>
+            <p class="dz-files" data-files></p>
+            <input class="sr-file" type="file" name="agreement" accept=".pdf,.png,.jpg,.jpeg,.tiff,.heic" multiple>
+          </label>
+
+          <label class="dz" data-dz>
+            <div class="dz-top"><span class="dz-name">Prior invoices</span><span class="dz-badge op">Optional</span></div>
+            <p class="dz-desc">Two or three past invoices from the same pole owner help us spot a pattern, not just a one-off charge.</p>
+            <p class="dz-files" data-files></p>
+            <input class="sr-file" type="file" name="prior" accept=".pdf,.png,.jpg,.jpeg,.tiff,.heic" multiple>
+          </label>
+
+          <label class="dz" data-dz>
+            <div class="dz-top"><span class="dz-name">Pole owner rate schedule</span><span class="dz-badge op">Optional</span></div>
+            <p class="dz-desc">A public or previously shared rate schedule or cost study strengthens the finding.</p>
+            <p class="dz-files" data-files></p>
+            <input class="sr-file" type="file" name="rates" accept=".pdf,.png,.jpg,.jpeg,.tiff,.heic,.xlsx,.csv" multiple>
+          </label>
+
+          <label class="dz" data-dz>
+            <div class="dz-top"><span class="dz-name">Photos or engineering records</span><span class="dz-badge op">Optional</span></div>
+            <p class="dz-desc">Only if the charge depends on physical conditions, like a claimed pole replacement or a capacity dispute.</p>
+            <p class="dz-files" data-files></p>
+            <input class="sr-file" type="file" name="records" accept=".pdf,.png,.jpg,.jpeg,.tiff,.heic" multiple>
+          </label>
+
+          <div class="field" style="margin-top:16px;">
+            <label class="fl" for="note">Anything that already looks off to you? <span class="opt">Optional</span></label>
+            <textarea class="fi" id="note" name="note" placeholder="List any line items you are questioning. We review every line regardless."></textarea>
+          </div>
+        </div>
+
+        <p class="reassure">Everything you send is reviewed solely to produce your findings report. See our <a href="nda.html" target="_blank" rel="noopener">NDA</a> and <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</p>
+
+        <button type="submit" class="submit-btn" id="submit-btn" disabled>Send my documents for a free audit</button>
+        <p class="fallback">Your documents are sent securely to the PoleProof intake team. Prefer to email instead? Write to <a href="mailto:audit@getpoleproof.com">audit@getpoleproof.com</a>.</p>
+      </form>
+
+      <div class="success-panel" id="success">
+        <svg class="ico" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="30" fill="none" stroke="#0a7a78" stroke-width="3"/><path d="M20 33l8 8 16-18" fill="none" stroke="#0a7a78" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h2 id="success-h">Your documents are in.</h2>
+        <p id="success-p">Thank you. Your details and documents reached the PoleProof intake team. Your findings report comes back within 10 business days, and we will email you at the address you gave if anything is missing.</p>
+        <p class="mono" id="success-sub" style="color:var(--grey-2);font-size:13.5px;">A confirmation will come from audit@getpoleproof.com.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="f-logo">PoleProof</div>
+      <div class="f-note">&copy; 2026 PoleProof. A service of PoleProof LLC.</div>
+    </div>
+    <div class="f-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="nda.html">NDA</a>
+      <a href="mailto:audit@getpoleproof.com">audit@getpoleproof.com</a>
+    </div>
+  </div>
+</footer>
+
+<script src="intake.js" defer></script>
+</body>
+</html>
