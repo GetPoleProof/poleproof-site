@@ -3,377 +3,611 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PoleProof — Make-Ready & Pole Attachment Invoice Audits</title>
-<meta name="description" content="PoleProof audits make-ready and pole attachment invoices against your agreement and FCC cost-allocation rules, and recovers what shouldn't have been billed.">
+<title>PoleProof | Make-Ready & Pole Attachment Invoice Audits for Fiber Builders</title>
+<meta name="description" content="PoleProof audits your make-ready and pole attachment invoices line by line against your agreement, FCC Part 1 Subpart J rules, and regional benchmark data, then hands you a dispute-ready finding. Contingency, nothing upfront, fully self-serve.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="PoleProof LLC">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="canonical" href="https://getpoleproof.com/">
+<meta name="theme-color" content="#150f2c">
+
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="PoleProof">
+<meta property="og:title" content="PoleProof | Make-Ready & Pole Attachment Invoice Audits">
+<meta property="og:description" content="The utility writes your make-ready invoice, then grades its own homework. PoleProof is the independent check: overcharges caught on contingency, nothing upfront.">
 <meta property="og:url" content="https://getpoleproof.com/">
-<meta property="og:title" content="PoleProof — Make-Ready & Pole Attachment Invoice Audits">
-<meta property="og:description" content="PoleProof audits make-ready and pole attachment invoices against your agreement and FCC cost-allocation rules, and recovers what shouldn't have been billed.">
 <meta property="og:image" content="https://getpoleproof.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="PoleProof — Make-Ready & Pole Attachment Invoice Audits">
-<meta name="twitter:description" content="PoleProof audits make-ready and pole attachment invoices against your agreement and FCC cost-allocation rules.">
+<meta name="twitter:title" content="PoleProof | Make-Ready & Pole Attachment Invoice Audits">
+<meta name="twitter:description" content="Independent audits for the attacher's side of the pole. Contingency. Nothing upfront. Fully self-serve.">
 <meta name="twitter:image" content="https://getpoleproof.com/og-image.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://getpoleproof.com/#organization",
-      "name": "PoleProof",
-      "legalName": "PoleProof LLC",
-      "url": "https://getpoleproof.com/",
-      "logo": "https://getpoleproof.com/apple-touch-icon.png",
-      "image": "https://getpoleproof.com/og-image.png",
-      "email": "hello@getpoleproof.com",
-      "foundingDate": "2026",
-      "description": "PoleProof audits make-ready and pole attachment invoices against signed pole attachment agreements and FCC cost-allocation rules, recovering overcharges for fiber ISPs, electric cooperatives, and municipal broadband builders.",
-      "areaServed": { "@type": "Country", "name": "United States" },
-      "sameAs": [ "https://www.linkedin.com/company/poleproof" ],
-      "knowsAbout": [
-        { "@type": "Thing", "name": "Pole attachment cost allocation (47 U.S.C. §224)", "url": "https://www.law.cornell.edu/uscode/text/47/224" },
-        { "@type": "Thing", "name": "FCC pole attachment complaint procedures (47 CFR Part 1, Subpart J)", "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-1/subpart-J" },
-        "Make-ready invoice auditing",
-        "Broadband make-ready cost recovery",
-        "BEAD program pole attachment costs",
-        "Electric cooperative and municipal pole attachment rates"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://getpoleproof.com/#website",
-      "url": "https://getpoleproof.com/",
-      "name": "PoleProof",
-      "inLanguage": "en-US",
-      "publisher": { "@id": "https://getpoleproof.com/#organization" }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://getpoleproof.com/#webpage",
-      "url": "https://getpoleproof.com/",
-      "name": "PoleProof — Make-Ready & Pole Attachment Invoice Audits",
-      "isPartOf": { "@id": "https://getpoleproof.com/#website" },
-      "about": { "@id": "https://getpoleproof.com/#service" },
-      "inLanguage": "en-US",
-      "description": "PoleProof audits make-ready and pole attachment invoices against your agreement and FCC cost-allocation rules, and recovers what shouldn't have been billed."
-    },
-    {
-      "@type": "Service",
-      "@id": "https://getpoleproof.com/#service",
-      "serviceType": "Pole attachment and make-ready invoice audit",
-      "name": "Make-ready & pole attachment invoice audit",
-      "provider": { "@id": "https://getpoleproof.com/#organization" },
-      "areaServed": { "@type": "Country", "name": "United States" },
-      "description": "Line-by-line audit of make-ready and pole attachment invoices against the client's signed agreement and applicable cost-allocation rules (47 U.S.C. §224 and 47 CFR Part 1, Subpart J for FCC-regulated poles, or state rules for cooperative and municipal poles), producing a dispute-ready findings report.",
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "Fiber ISPs, electric cooperatives, municipal broadband builders, BEAD subgrantees"
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://getpoleproof.com/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What does PoleProof do?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "PoleProof reviews make-ready and pole attachment invoices or estimates against your signed pole attachment agreement and the cost-allocation rules that actually apply — 47 U.S.C. §224 and 47 CFR Part 1, Subpart J for FCC-regulated poles, or the applicable state rule for cooperative and municipal poles — and returns a dispute-ready findings report."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does an audit cost right now?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nothing. PoleProof is running a small number of free concierge audits to validate the model with real invoices before anything is automated or scaled. There's no subscription and no obligation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What do I need to send to get an audit?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "One invoice or cost estimate, plus your signed pole attachment agreement. Prior invoices help but aren't required."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you review an estimate before I pay it, or only invoices I've already received?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Both. Review an estimate before you pay, or audit an invoice you've already received — either works."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does an audit take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A findings report typically comes back within 10 business days."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is a findings report the same as a legal filing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. It's a factual and contractual review, not legal advice or a legal filing. If you decide to dispute a charge with the FCC or a state regulator, that filing should be prepared by your own counsel."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who is PoleProof for?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Fiber ISPs, electric cooperatives, municipal broadband builders, and BEAD subgrantees working through make-ready and pole attachment costs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is my data kept confidential?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Documents you send are reviewed solely to produce your findings report and aren't shared beyond that purpose, other than in de-identified, aggregated form to improve PoleProof's benchmark data."
-          }
-        }
-      ]
-    }
+  "@type": "Organization",
+  "name": "PoleProof",
+  "legalName": "PoleProof LLC",
+  "url": "https://getpoleproof.com",
+  "logo": "https://getpoleproof.com/apple-touch-icon.png",
+  "image": "https://getpoleproof.com/og-image.png",
+  "foundingDate": "2026",
+  "description": "Independent make-ready and pole attachment invoice auditing for fiber and broadband builders, checking invoices against signed agreements, FCC Part 1 Subpart J cost-allocation rules, and regional benchmark data.",
+  "areaServed": "US",
+  "email": "hello@getpoleproof.com",
+  "sameAs": ["https://www.linkedin.com/company/poleproof"],
+  "knowsAbout": ["Make-ready invoice auditing", "Pole attachment cost allocation (47 U.S.C. 224)", "FCC Part 1 Subpart J", "BEAD, RDOF, and ARPA broadband builds", "Electric cooperative and municipal pole attachment rates"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Utility pole attachment and make-ready invoice audit",
+  "provider": { "@type": "Organization", "name": "PoleProof" },
+  "areaServed": "US",
+  "description": "Line-by-line audit of make-ready and pole attachment estimates and invoices against the client's signed agreement, FCC Part 1 Subpart J cost-allocation rules, and regional benchmark data, delivered as a dispute-ready packet. Contingency fee, nothing upfront.",
+  "offers": [
+    { "@type": "Offer", "name": "Free check", "price": "0", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "Project audit", "description": "Estimates reviewed before payment and invoices audited after billing, on contingency, no upfront charge." },
+    { "@type": "Offer", "name": "Managed monitoring", "description": "Always-on automated review in three plans that scale by poles and pole owners, from 199 USD per month plus a reduced recovery share as low as 15 percent." }
   ]
 }
 </script>
+
+<style>
+:root{
+  --indigo:#1b1440; --indigo2:#241a54; --deep:#150f2c;
+  --teal:#0ea5a3; --teal-d:#0a7a78; --teal-light:#5fd6d4;
+  --gold:#c99a3a; --red:#b23a3a;
+  --paper:#f1eee7; --paper2:#e8e3d8;
+  --grey:#6a647c; --grey2:#8a8598;
+  --line:rgba(27,20,64,0.14); --line-light:rgba(241,238,231,0.16);
+  --display:'Zilla Slab',Georgia,serif; --body:'IBM Plex Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',monospace;
+  --grad:linear-gradient(140deg,#150f2c 0%,#1b1440 52%,#241a54 100%);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;font-family:var(--body);color:var(--indigo);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.12;margin:0;color:var(--indigo);}
+p{line-height:1.6;}
+a{color:var(--teal-d);}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:2px;}
+section{padding:78px 0;}
+@media(max-width:640px){section{padding:52px 0;}.wrap{padding:0 20px;}}
+.rule-top{border-top:1px solid var(--line);}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:1.3px;text-transform:uppercase;color:var(--teal-d);font-weight:600;display:inline-block;}
+.dark .eyebrow{color:var(--teal-light);}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;text-decoration:none;padding:14px 24px;border-radius:6px;transition:transform .15s ease,background-color .15s ease,box-shadow .15s ease,border-color .15s ease;cursor:pointer;border:none;}
+.btn:hover{transform:translateY(-1px);}
+.btn-primary{background:var(--teal);color:var(--deep);}
+.btn-primary:hover{background:#12b8b6;box-shadow:0 10px 24px -8px rgba(14,165,163,.6);}
+.btn-ghost{background:transparent;color:var(--paper);border:1.5px solid var(--line-light);}
+.btn-ghost:hover{border-color:var(--teal);color:var(--teal-light);}
+.btn-ghost-dark{background:transparent;color:var(--indigo);border:1.5px solid var(--indigo);}
+.btn-ghost-dark:hover{border-color:var(--teal-d);color:var(--teal-d);}
+.arrow{transition:transform .15s ease;}
+.btn:hover .arrow{transform:translateX(3px);}
+nav{position:sticky;top:0;z-index:60;background:rgba(21,15,44,0.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line-light);}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;}
+.brand svg{width:38px;height:38px;flex-shrink:0;}
+.brand .wm{font-family:var(--display);font-weight:700;font-size:21px;color:#fff;letter-spacing:-.3px;}
+.brand .wm span{color:var(--teal);}
+.navlinks{display:flex;align-items:center;gap:26px;}
+.navlinks a{color:rgba(241,238,231,.82);text-decoration:none;font-size:14px;font-weight:500;}
+.navlinks a:not(.nav-cta):hover{color:#fff;}
+.nav-cta{background:var(--teal);color:var(--deep)!important;padding:10px 18px;border-radius:6px;font-weight:600;}
+.nav-cta:hover{background:#12b8b6;}
+@media(max-width:820px){.navlinks a:not(.nav-cta){display:none;}}
+.hero{background:var(--grad);color:var(--paper);padding:74px 0 82px;position:relative;overflow:hidden;}
+.hero::after{content:"";position:absolute;inset:0;opacity:.06;background-image:radial-gradient(rgba(255,255,255,.7) 1px,transparent 1px);background-size:24px 24px;pointer-events:none;}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.08fr .92fr;gap:52px;align-items:center;}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:40px;}}
+.hero h1{font-size:44px;color:#fff;margin:16px 0 18px;letter-spacing:-.5px;}
+@media(max-width:640px){.hero h1{font-size:31px;}}
+.hero .lede{font-size:17.5px;color:rgba(241,238,231,.84);max-width:46ch;margin:0 0 28px;}
+.hero-ctas{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:20px;}
+.hero-note{font-family:var(--mono);font-size:12px;color:rgba(241,238,231,.55);line-height:1.7;}
+.ledger{background:#fff;border-radius:12px;padding:22px 24px 18px;box-shadow:0 30px 60px -22px rgba(0,0,0,.6);position:relative;}
+.ledger .lhead{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:11px;margin-bottom:4px;}
+.ledger .lhead b{font-family:var(--display);font-size:15px;color:var(--indigo);}
+.ledger .lhead span{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--grey2);}
+.lrow{display:grid;grid-template-columns:1.7fr .72fr .72fr;align-items:baseline;padding:10px 0;border-bottom:1px dashed var(--line);font-size:13px;gap:6px;}
+.lrow .it{color:var(--indigo);}
+.lrow .inv{font-family:var(--mono);text-align:right;color:var(--gold);position:relative;}
+.lrow .inv.struck::after{content:"";position:absolute;left:-2px;right:-2px;top:52%;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;animation:strike 2.6s ease-in-out infinite;}
+.lrow .alw{font-family:var(--mono);text-align:right;color:var(--teal-d);font-weight:600;}
+.ltot{display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;padding-top:12px;border-top:2px solid var(--indigo);}
+.ltot .lb{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--grey);}
+.ltot .am{font-family:var(--mono);font-weight:700;font-size:21px;color:var(--gold);}
+.lstamp{position:absolute;right:20px;top:66px;border:2.5px solid var(--teal-d);color:var(--teal-d);font-family:var(--mono);font-weight:600;font-size:10.5px;letter-spacing:1px;padding:4px 9px;border-radius:5px;transform:rotate(-8deg);opacity:0;animation:stampin 2.6s ease-in-out infinite;}
+@keyframes strike{0%{transform:scaleX(0);}26%{transform:scaleX(1);}88%{transform:scaleX(1);}100%{transform:scaleX(1);}}
+@keyframes stampin{0%{opacity:0;transform:rotate(-8deg) scale(1.35);}34%{opacity:0;}46%{opacity:1;transform:rotate(-8deg) scale(1);}88%{opacity:1;}100%{opacity:1;}}
+@media(prefers-reduced-motion:reduce){.lrow .inv.struck::after{animation:none;transform:scaleX(1);}.lstamp{animation:none;opacity:1;}}
+.stats{background:var(--paper);padding:44px 0;border-bottom:1px solid var(--line);}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media(max-width:800px){.stat-row{grid-template-columns:1fr;}}
+.stat-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 20px;}
+.stat-card .num{font-family:var(--mono);font-size:26px;font-weight:700;color:var(--teal-d);}
+.stat-card .lbl{font-size:13.5px;color:#443f5c;margin-top:7px;line-height:1.5;}
+.stat-card .src{font-size:11px;color:var(--grey2);margin-top:10px;font-style:italic;}
+.problem{background:var(--paper2);}
+.problem .wrap{max-width:780px;text-align:center;}
+.problem h2{font-size:31px;margin-bottom:16px;}
+.problem p{font-size:17px;color:#3a3554;}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px;}
+@media(max-width:800px){.steps{grid-template-columns:1fr;}}
+.step{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px;border-top:3px solid var(--teal);}
+.step .n{font-family:var(--mono);font-size:20px;font-weight:700;color:var(--gold);}
+.step h3{font-size:18px;margin:8px 0 7px;}
+.step p{font-size:14px;color:var(--grey);margin:0;}
+.method{background:var(--grad);color:var(--paper);}
+.method h2{color:#fff;font-size:30px;}
+.method .lede{color:rgba(241,238,231,.8);font-size:16px;max-width:60ch;margin-top:12px;}
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:38px;}
+@media(max-width:800px){.mgrid{grid-template-columns:1fr 1fr;}}
+.mcard{border:1px solid var(--line-light);border-radius:9px;padding:20px 18px;transition:border-color .2s,transform .2s;}
+.mcard:hover{border-color:var(--teal);transform:translateY(-2px);}
+.mcard h4{font-family:var(--display);font-size:16px;color:#fff;margin:10px 0 7px;}
+.mcard p{font-size:13.5px;color:rgba(241,238,231,.74);margin:0;}
+.mcard .eyebrow{color:var(--teal-light);}
+.bench .wrap{max-width:820px;}
+.bench h2{font-size:30px;}
+.bench p{font-size:16.5px;color:#3a3554;max-width:66ch;margin-top:14px;}
+.bench p.small{color:var(--grey);font-size:15px;}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;margin-top:34px;align-items:center;}
+@media(max-width:800px){.calc-grid{grid-template-columns:1fr;}}
+.calc-field{margin-bottom:24px;}
+.calc-field label{display:block;font-size:13.5px;font-weight:600;margin-bottom:9px;}
+.calc-field label span{color:var(--teal-d);font-family:var(--mono);}
+.calc-prefixed{display:flex;align-items:center;border:1px solid var(--line);border-radius:6px;background:#fff;overflow:hidden;}
+.calc-prefixed span{padding:12px 4px 12px 14px;font-family:var(--mono);color:var(--grey2);}
+.calc-prefixed input{border:none;padding:12px 14px 12px 2px;font-family:var(--mono);font-size:15px;width:100%;background:transparent;color:var(--indigo);}
+.calc-prefixed input:focus-visible{outline:none;}
+.calc-prefixed:focus-within{border-color:var(--teal);}
+input[type=range]{width:100%;accent-color:var(--teal-d);height:4px;}
+.calc-note{font-size:12px;color:var(--grey2);margin-top:8px;}
+.calc-out{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 28px;}
+.calc-row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);gap:12px;}
+.calc-row span:first-child{font-size:13.5px;color:#443f5c;max-width:22ch;}
+.calc-row-total{border-bottom:none;padding-top:15px;}
+.calc-row-total span:first-child{font-weight:600;color:var(--indigo);}
+.calc-num{font-family:var(--mono);font-size:20px;font-weight:600;color:var(--indigo);white-space:nowrap;}
+.calc-num.gold{color:var(--gold);}
+.calc-num.teal{color:var(--teal-d);font-size:24px;}
+.calc-disc{font-size:12px;color:var(--grey2);margin-top:20px;}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:42px;}
+@media(max-width:900px){.tiers{grid-template-columns:1fr;}}
+.tier{background:#fff;border:1px solid var(--line);border-radius:10px;padding:28px 24px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;}
+.tier:hover{transform:translateY(-3px);box-shadow:0 18px 34px -16px rgba(27,20,64,.28);}
+.tier.hi{border:2px solid var(--teal);position:relative;}
+.tier.hi::before,.tier.himon::before{content:'Most chosen';position:absolute;top:-13px;left:24px;background:var(--teal);color:var(--deep);font-family:var(--mono);font-size:10.5px;letter-spacing:.7px;text-transform:uppercase;padding:4px 11px;border-radius:20px;font-weight:600;}
+.tier.himon{border:2px solid var(--teal);position:relative;}
+.tier.himon::before{content:'Most chosen tier';}
+.tname{font-family:var(--mono);font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:var(--teal-d);}
+.tprice{font-family:var(--display);font-size:33px;margin:10px 0 4px;}
+.tprice span{font-family:var(--body);font-size:13px;color:var(--grey2);font-weight:400;}
+.tdesc{font-size:14px;color:#443f5c;margin-bottom:16px;}
+.tier ul{list-style:none;padding:0;margin:0 0 22px;flex-grow:1;}
+.tier li{font-size:13.5px;padding:7px 0;border-bottom:1px solid var(--line);display:flex;gap:8px;}
+.tier li:last-child{border-bottom:none;}
+.tk{color:var(--teal-d);font-weight:700;}
+.tdelta{font-weight:600;color:var(--indigo);}
+.troadmap{font-size:12px;color:var(--grey);font-style:italic;margin-top:8px;}
+.monitoring{background:var(--paper2);}
+.monitoring .lede{max-width:64ch;color:#3a3554;font-size:16px;margin-top:12px;}
+.moments{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:34px 0 4px;}
+@media(max-width:800px){.moments{grid-template-columns:1fr;}}
+.moment{background:#fff;border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:9px;padding:22px 24px;}
+.moment .mtag{font-family:var(--mono);font-size:11px;letter-spacing:.7px;text-transform:uppercase;color:var(--teal-d);}
+.moment h3{font-size:18px;margin:8px 0 7px;}
+.moment p{font-size:14px;color:var(--grey);margin:0;}
+.incl{background:var(--grad);color:var(--paper);border-radius:9px;padding:18px 24px;margin:26px 0 4px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;}
+.incl .il{font-family:var(--mono);font-size:11px;letter-spacing:.7px;text-transform:uppercase;color:var(--teal-light);white-space:nowrap;}
+.incl ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 20px;margin:0;padding:0;}
+.incl li{font-size:13px;display:flex;gap:7px;align-items:center;}
+.incl li::before{content:'\2713';color:var(--teal-light);font-weight:700;}
+.reverser{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--teal-d);border-radius:9px;padding:14px 18px;margin:26px 0 4px;}
+.reverser svg{color:var(--teal-d);flex-shrink:0;}
+.reverser p{margin:0;font-size:14px;color:var(--indigo);}
+.reverser b{color:var(--teal-d);}
+.founding{font-size:12.5px;color:var(--grey);margin-top:20px;max-width:72ch;}
+.programs{background:var(--deep);color:var(--paper);padding:40px 0;}
+.programs .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;}
+.programs .pt{font-family:var(--mono);font-size:11.5px;letter-spacing:1px;text-transform:uppercase;color:var(--teal-light);}
+.programs h3{color:#fff;font-size:20px;margin:6px 0 0;max-width:34ch;}
+.prog-chips{display:flex;flex-wrap:wrap;gap:10px;max-width:520px;}
+.prog-chips span{border:1px solid var(--line-light);border-radius:20px;padding:7px 15px;font-size:13px;color:rgba(241,238,231,.9);}
+.founder .wrap{max-width:720px;}
+.founder h2{font-size:28px;}
+.founder p{font-size:16px;color:#3a3554;line-height:1.75;margin:16px 0 0;}
+.founder .sig{font-family:var(--display);font-weight:700;font-size:17px;color:var(--indigo);margin:24px 0 0;}
+.founder .sigrole{font-family:var(--mono);font-size:12.5px;letter-spacing:.4px;color:var(--teal-d);margin:2px 0 0;}
+.faq-list{max-width:760px;margin-top:34px;}
+.faq-list details{border-bottom:1px solid var(--line);padding:18px 0;}
+.faq-list summary{cursor:pointer;font-weight:600;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--indigo);}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list .pm{color:var(--teal-d);font-weight:400;font-size:20px;}
+.faq-list .ans{font-size:14.5px;color:#443f5c;margin-top:12px;line-height:1.65;max-width:66ch;}
+.account-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px;}
+@media(max-width:800px){.account-grid{grid-template-columns:1fr;}}
+.acard{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px;}
+.acard.signin{background:var(--paper2);}
+.acard h3{font-size:19px;margin:0 0 6px;}
+.acard>p{font-size:14px;color:var(--grey);margin:0 0 16px;}
+.field{margin-bottom:14px;}
+.field label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;}
+.field input{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:6px;font-family:var(--body);font-size:14px;background:var(--paper);color:var(--indigo);}
+.signin .field input{background:#fff;}
+.field input:focus-visible{outline:2px solid var(--teal);outline-offset:1px;}
+.consent{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:var(--grey);margin:8px 0 16px;line-height:1.5;}
+.consent input{margin-top:2px;flex-shrink:0;}
+.consent a,.forgot,.acct-prev a,.legal-note a{color:var(--teal-d);}
+.acard .btn{width:100%;justify-content:center;}
+.signin-row{display:flex;justify-content:flex-end;margin:-4px 0 14px;}
+.forgot{font-size:12.5px;text-decoration:none;}
+.acct-prev{margin-top:18px;border-top:1px solid var(--line);padding-top:14px;font-size:13px;color:var(--grey);}
+.acct-prev strong{display:block;font-size:12px;font-family:var(--mono);letter-spacing:.4px;text-transform:uppercase;color:var(--teal-d);margin-bottom:8px;}
+.acct-prev ul{margin:0;padding-left:18px;}.acct-prev li{margin:5px 0;}
+.form-msg{font-size:13px;color:var(--teal-d);margin-top:12px;font-weight:600;display:none;}
+.legal-note{font-size:12.5px;color:var(--grey);margin-top:22px;text-align:center;}
+.ctaband{background:var(--grad);color:#fff;text-align:center;}
+.ctaband h2{color:#fff;font-size:28px;margin-bottom:12px;}
+.ctaband p{color:rgba(241,238,231,.8);margin-bottom:26px;}
+.staytouch{background:var(--paper2);}
+.staytouch-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:22px;}
+.capture-form{display:flex;gap:10px;flex-wrap:wrap;max-width:380px;width:100%;}
+.capture-form input{flex:1;min-width:180px;padding:12px 14px;border:1px solid var(--line);border-radius:6px;font-family:var(--body);font-size:14px;background:#fff;color:var(--indigo);}
+.capture-form .btn{padding:12px 20px;font-size:14px;white-space:nowrap;}
+footer{background:var(--deep);color:rgba(241,238,231,.6);padding:44px 0 32px;}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:13px;align-items:center;}
+footer .f-brand{display:flex;align-items:center;gap:10px;}
+footer .f-brand .wm{font-family:var(--display);font-weight:700;color:#fff;font-size:16px;}
+footer .f-brand .wm span{color:var(--teal-light);}
+footer .flinks a{color:rgba(241,238,231,.8);text-decoration:none;margin-left:18px;}
+footer .flinks a:first-child{margin-left:0;}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.on{opacity:1;transform:none;}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}html{scroll-behavior:auto;}}
+</style>
 </head>
 <body>
 
-<nav class="nav">
+<nav>
   <div class="wrap">
-    <a class="logo" href="#top">POLE<span>PROOF</span></a>
-    <div class="nav-links">
-      <a href="#how-it-works">How it works</a>
-      <a href="#model">The model</a>
-      <a href="#trust">Why trust it</a>
+    <a class="brand" href="#top" aria-label="PoleProof home">
+      <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#241a54"/><stop offset="1" stop-color="#150f2c"/></linearGradient></defs><rect width="300" height="300" rx="66" fill="url(#lg)"/><g transform="translate(150,150) scale(1.2) translate(-161.5,-154.5)"><circle cx="150" cy="140" r="84" fill="none" stroke="#0ea5a3" stroke-width="11"/><g stroke="#f1eee7" stroke-linecap="round" fill="#f1eee7"><line x1="150" y1="110" x2="150" y2="192" stroke-width="12"/><line x1="108" y1="118" x2="192" y2="118" stroke-width="10"/><line x1="122" y1="118" x2="122" y2="104" stroke-width="5"/><line x1="150" y1="118" x2="150" y2="102" stroke-width="5"/><line x1="178" y1="118" x2="178" y2="104" stroke-width="5"/><line x1="120" y1="142" x2="180" y2="142" stroke-width="9"/><line x1="134" y1="142" x2="134" y2="131" stroke-width="4.5"/><line x1="166" y1="142" x2="166" y2="131" stroke-width="4.5"/></g><circle cx="214" cy="210" r="43" fill="#150f2c"/><circle cx="214" cy="210" r="34" fill="#0ea5a3"/><path d="M197 210 L209 223 L233 193" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+      <span class="wm">Pole<span>Proof</span></span>
+    </a>
+    <div class="navlinks">
+      <a href="#how">How it works</a>
+      <a href="#method">Methodology</a>
+      <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
+      <a href="#login">Sign in</a>
+      <a class="nav-cta" href="#check">Run a free check</a>
     </div>
-    <a class="btn" href="mailto:hello@getpoleproof.com?subject=Free%20concierge%20audit">Get a free audit</a>
   </div>
 </nav>
 
 <header class="hero" id="top">
-  <div class="wrap hero-grid">
+  <div class="wrap">
     <div>
-      <span class="eyebrow">Make-ready &amp; pole attachment invoice audits</span>
-      <h1>Every pole attachment invoice should have to show its work.</h1>
-      <p class="lede">PoleProof checks make-ready and attachment invoices line by line against your signed agreement and the cost-allocation rules that actually govern each charge &mdash; then hands back a clear, dispute-ready finding.</p>
+      <span class="eyebrow" style="color:var(--teal-light);">Independent audits for the attacher's side of the pole</span>
+      <h1>The utility writes your make-ready invoice. Then grades its own homework.</h1>
+      <p class="lede">PoleProof checks every make-ready estimate before you pay it and every invoice after you're billed, against your signed agreement, FCC Part 1 Subpart J rules, and a growing regional benchmark. Then it hands you a dispute-ready finding. On contingency. Nothing upfront.</p>
       <div class="hero-ctas">
-        <a class="btn" href="mailto:hello@getpoleproof.com?subject=Free%20concierge%20audit">Get a free audit</a>
-        <a class="btn-ghost" href="#how-it-works">See how it works</a>
+        <a class="btn btn-primary" href="#check">Run a free check <span class="arrow">&rarr;</span></a>
+        <a class="btn btn-ghost" href="#how">See how it works</a>
       </div>
+      <div class="hero-note">Fiber ISPs &middot; electric cooperatives &middot; municipal &amp; Tribal broadband &middot; BEAD, RDOF &amp; ARPA builds &middot; results by email, no account required for the free check</div>
     </div>
-    <div class="ledger-card" role="img" aria-label="Example audit finding showing an invoiced pole replacement charge reduced to the allowable amount, with the overcharge highlighted">
-      <div class="lc-head"><span>Charge</span><span>Invoiced</span><span>Allowable</span></div>
-      <div class="lc-row"><span class="item">Pole replacement, incremental share</span><span class="invoiced">$18,000</span><span class="allowable">$14,850</span></div>
-      <div class="lc-row"><span class="item">Make-ready engineering &amp; design</span><span class="invoiced">$6,200</span><span class="allowable">$6,200</span></div>
-      <div class="lc-row"><span class="item">Attachment application fee</span><span class="invoiced">$1,050</span><span class="allowable">$950</span></div>
-      <div class="lc-total"><span class="label">Total overcharge found</span><span class="amount">$3,250</span></div>
+    <div class="ledger">
+      <div class="lhead"><div><b>Make-Ready Invoice</b><br><span>Estimate #4471 &middot; Pole Owner Co.</span></div><span>Audited</span></div>
+      <div class="lrow" style="grid-template-columns:1.7fr .72fr .72fr;"><span class="it" style="font-family:var(--mono);font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--grey2);">Charge</span><span class="inv" style="color:var(--grey2);text-decoration:none;">Invoiced</span><span class="alw" style="color:var(--grey2);font-weight:400;">Allowable</span></div>
+      <div class="lrow"><span class="it">Pole replacement, incremental share</span><span class="inv struck">$18,000</span><span class="alw">$14,850</span></div>
+      <div class="lrow"><span class="it">Make-ready engineering</span><span class="inv" style="color:var(--indigo);">$6,200</span><span class="alw">$6,200</span></div>
+      <div class="lrow"><span class="it">Rearrangement, wrong party</span><span class="inv struck">$620</span><span class="alw">$0</span></div>
+      <div class="ltot"><span class="lb">Overcharge found</span><span class="am">$3,770</span></div>
+      <div class="lstamp">FLAGGED</div>
     </div>
   </div>
 </header>
 
-<hr class="divider">
-
-<section id="problem">
+<section class="stats">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">The problem</span>
-      <h2>Make-ready is where broadband budgets quietly leak.</h2>
-      <p>It's not that pole owners are trying to overcharge anyone. It's that nobody on a build team has time to check every line item against the agreement while also running construction &mdash; so charges above what's actually allowed go uncaught, invoice after invoice.</p>
-    </div>
     <div class="stat-row">
-      <div class="stat-card">
-        <div class="stat-num">$9.65 &rarr; $12.55</div>
-        <div class="stat-label">The FCC's own national per-pole rate benchmark, 2023 to 2026 &mdash; the range PoleProof checks a per-pole rental charge against.</div>
-        <div class="stat-src">Source: FCC pole attachment rate order</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">§224</div>
-        <div class="stat-label">The federal cost-allocation standard for most investor-owned utility poles &mdash; plus a separate state-by-state standard for cooperative and municipal poles.</div>
-        <div class="stat-src">47 U.S.C. §224 &amp; 47 CFR Part 1, Subpart J</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">0</div>
-        <div class="stat-label">Cost to you for a first concierge audit. PoleProof is validating the model with a small number of BEAD builders right now.</div>
-        <div class="stat-src">No obligation either way</div>
-      </div>
+      <div class="stat-card reveal"><div class="num">200&ndash;800%</div><div class="lbl">How far utilities can exceed their own make-ready cost estimates, per filings to the FCC.</div><div class="src">NCTA comments to the FCC</div></div>
+      <div class="stat-card reveal"><div class="num">$100 &rarr; $1,600</div><div class="lbl">The per-pole incremental cost spread being contested at the FCC right now: one attacher's figure versus the utility's formula.</div><div class="src">2025&ndash;26 FCC pole attachment dispute</div></div>
+      <div class="stat-card reveal"><div class="num">$6,000<span style="font-size:14px;color:var(--grey2);"> / mile</span></div><div class="lbl">Preapplication engineering studies attachers were billed, for work argued to duplicate what rental fees already cover.</div><div class="src">ACA Connects filing</div></div>
     </div>
   </div>
 </section>
 
-<hr class="divider">
-
-<section id="how-it-works">
+<section class="problem">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">How it works</span>
-      <h2>Three steps, ten business days.</h2>
-      <p>No portal to log into, no software to install. Send documents, get a finding.</p>
-    </div>
+    <span class="eyebrow">The problem</span>
+    <h2 style="margin-top:12px;">You have no independent way to check the bill.</h2>
+    <p>Pole owners write the make-ready estimate, perform the work, and issue the final invoice, with no outside party checking their math against the rules that are supposed to govern it. Overcharges, duplicate line items, and pole-replacement costs shifted onto the wrong party are common and hard to catch without reading every invoice against your agreement and Subpart J, line by line, on every pole, every time.</p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <span class="eyebrow reveal">How it works</span>
+    <h2 class="reveal" style="margin-top:12px;font-size:30px;">Forward it or upload it. Get results. Nothing in between.</h2>
     <div class="steps">
-      <div class="step-row">
-        <div class="step-num">01</div>
-        <div><h3>Send one invoice or estimate</h3><p>Plus your signed pole attachment agreement. Review before you pay, or audit an invoice you've already received &mdash; either works.</p></div>
+      <div class="step reveal"><div class="n">01</div><h3>Send the estimate or invoice</h3><p>Forward it to audit@getpoleproof.com with your signed agreement, or upload it. Review before you pay, or audit after you're billed. That is the whole ask.</p></div>
+      <div class="step reveal"><div class="n">02</div><h3>The automated audit runs</h3><p>Every line item is checked against your agreement, FCC Part 1 Subpart J cost-allocation rules, and the regional benchmark. No one reviews it manually before you see it.</p></div>
+      <div class="step reveal"><div class="n">03</div><h3>Your finding lands in your inbox</h3><p>A plain-language summary and, where applicable, a dispute-ready packet with citations and the corrected amount, ready to send the pole owner yourself.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="method" class="method dark">
+  <div class="wrap">
+    <span class="eyebrow reveal">Methodology</span>
+    <h2 class="reveal" style="margin-top:12px;">What the audit actually checks</h2>
+    <p class="lede reveal">Every invoice runs through four independent checks. Each catches a different category of error, and they compound: a charge can pass one and still fail another.</p>
+    <div class="mgrid">
+      <div class="mcard reveal"><span class="eyebrow">01</span><h4>Agreement match</h4><p>Line items are compared against the rates, cost-share terms, and scope in your signed attachment agreement.</p></div>
+      <div class="mcard reveal"><span class="eyebrow">02</span><h4>Subpart J compliance</h4><p>Charges are checked against FCC Part 1 Subpart J cost-allocation rules, including which party owes what share.</p></div>
+      <div class="mcard reveal"><span class="eyebrow">03</span><h4>Regional benchmark</h4><p>Costs are compared against a growing dataset of what comparable work actually bills at, by pole owner and region.</p></div>
+      <div class="mcard reveal"><span class="eyebrow">04</span><h4>Duplicate and drift</h4><p>Invoices are checked against prior estimates and invoices for the same pole to catch duplicate billing and quiet cost creep.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bench">
+  <div class="wrap">
+    <span class="eyebrow reveal">Why PoleProof wins the argument</span>
+    <h2 class="reveal" style="margin-top:12px;">You only see your own invoices. We see the whole map.</h2>
+    <p class="reveal">One builder cannot tell whether a charge is fair. We can. Every line you send is compared against a growing benchmark of what pole owners across your region actually bill, so you know the moment you are charged above the norm, and you have the number to prove it. That is the difference between disputing a charge on a hunch and disputing it with evidence.</p>
+    <p class="reveal small">Every audit we run makes that benchmark sharper, which makes your next dispute stronger. It compounds for you, not for the pole owner.</p>
+  </div>
+</section>
+
+<section class="calc rule-top" id="calculator">
+  <div class="wrap">
+    <span class="eyebrow reveal">Estimate your savings</span>
+    <h2 class="reveal" style="margin-top:12px;font-size:30px;">See what this could mean for your invoices.</h2>
+    <p class="reveal" style="color:var(--grey);max-width:62ch;margin-top:12px;">An estimate you control, based on FCC Part 1 Subpart J cost-allocation rules, not a claim about any client's results. Set your own numbers.</p>
+    <div class="calc-grid reveal">
+      <div>
+        <div class="calc-field">
+          <label for="calcSpend">Annual make-ready and attachment invoice spend</label>
+          <div class="calc-prefixed"><span>$</span><input type="text" id="calcSpend" value="100,000" inputmode="numeric" autocomplete="off"></div>
+        </div>
+        <div class="calc-field">
+          <label for="calcRate">Estimated share of that spend in error <span id="calcRateVal">8%</span></label>
+          <input type="range" id="calcRate" min="0" max="25" value="8" step="1">
+          <div class="calc-note">Adjust to your own experience. This is not an average we're claiming, it's yours to set.</div>
+        </div>
       </div>
-      <div class="step-row">
-        <div class="step-num">02</div>
-        <div><h3>PoleProof audits every line item</h3><p>Each charge is checked against your agreement and the cost-allocation rule that actually governs it &mdash; Section 224/Subpart J for FCC-regulated poles, or the applicable state rule for cooperative and municipal poles.</p></div>
+      <div class="calc-out" aria-live="polite">
+        <div class="calc-row"><span>Overcharges identified</span><span class="calc-num gold" id="calcFound">$8,000</span></div>
+        <div class="calc-row"><span>PoleProof's fee (30% of recovered)</span><span class="calc-num" id="calcFee">$2,400</span></div>
+        <div class="calc-row calc-row-total"><span>Net savings to you</span><span class="calc-num teal" id="calcNet">$5,600</span></div>
       </div>
-      <div class="step-row">
-        <div class="step-num">03</div>
-        <div><h3>You get a dispute-ready finding</h3><p>A clear report within 10 business days: what's allowed, what isn't, and what to do next &mdash; whether that's a clean bill or a credit request.</p></div>
+    </div>
+    <p class="calc-disc reveal">Illustrative only, not a quote or guarantee. Your actual results depend on your invoices, your agreement, and your region. On Managed Monitoring the recovery share drops as low as 15%, so you keep even more.</p>
+  </div>
+</section>
+
+<section id="pricing" class="rule-top">
+  <div class="wrap">
+    <span class="eyebrow reveal">Pricing</span>
+    <h2 class="reveal" style="margin-top:12px;font-size:30px;">Three ways to work with us. All of them start online.</h2>
+    <div class="tiers">
+      <div class="tier reveal">
+        <span class="tname">Free check</span>
+        <div class="tprice">$0<span> / one document</span></div>
+        <p class="tdesc">See if a single estimate or invoice has errors before you commit to anything.</p>
+        <ul>
+          <li><span class="tk">&check;</span> One estimate or invoice, audited automatically</li>
+          <li><span class="tk">&check;</span> Plain-language findings summary</li>
+          <li><span class="tk">&check;</span> No account required</li>
+          <li><span class="tk">&check;</span> Delivered by email, no call</li>
+        </ul>
+        <a class="btn btn-ghost-dark" href="#check">Run a free check</a>
+      </div>
+      <div class="tier hi reveal">
+        <span class="tname">Project audit</span>
+        <div class="tprice">30%<span> of recovered or avoided</span></div>
+        <p class="tdesc">Full coverage for an active build. Estimates reviewed before you pay, invoices audited after you're billed. Nothing upfront, ever.</p>
+        <ul>
+          <li><span class="tk">&check;</span> Estimates reviewed before you pay them</li>
+          <li><span class="tk">&check;</span> Invoices and true-ups audited after billing</li>
+          <li><span class="tk">&check;</span> Dispute-ready packet with citations</li>
+          <li><span class="tk">&check;</span> You pay only from what you save</li>
+        </ul>
+        <a class="btn btn-primary" href="#check">Audit my build <span class="arrow">&rarr;</span></a>
+      </div>
+      <div class="tier reveal">
+        <span class="tname">Managed monitoring</span>
+        <div class="tprice">From $199<span> / mo + 20%</span></div>
+        <p class="tdesc">Always on. Every estimate checked before you pay and every invoice after, with a lower recovery share. Scales with your portfolio.</p>
+        <ul>
+          <li><span class="tk">&check;</span> Estimates caught before payment, invoices audited after</li>
+          <li><span class="tk">&check;</span> Dispute and refund deadlines tracked so none expire</li>
+          <li><span class="tk">&check;</span> Recovery share drops as low as 15%, not 30%</li>
+          <li><span class="tk">&check;</span> Three plans, from 1,000 poles to unlimited</li>
+        </ul>
+        <p class="troadmap">One caught overcharge usually covers a year of monitoring several times over.</p>
+        <a class="btn btn-ghost-dark" href="#monitoring">See monitoring plans <span class="arrow">&rarr;</span></a>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="divider">
-
-<section id="stakes">
+<section id="monitoring" class="monitoring">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">What it means for the build</span>
-      <h2>Every unaudited dollar is a bet against your own budget.</h2>
+    <span class="eyebrow reveal">Managed Monitoring</span>
+    <h2 class="reveal" style="margin-top:12px;font-size:30px;">Catch it before you pay. Recover it after you're billed.</h2>
+    <p class="lede reveal">Managed Monitoring watches both moments where a pole owner can overcharge you, automatically and continuously, so nothing slips past on either side of the bill.</p>
+    <div class="moments">
+      <div class="moment reveal"><span class="mtag">Before you pay &middot; the watchdog</span><h3>Stop the overcharge at the estimate</h3><p>Every estimate is checked against your agreement and Subpart J before a dollar leaves your account. The strongest save is the overcharge that never happens.</p></div>
+      <div class="moment reveal"><span class="mtag">After you're billed &middot; the audit</span><h3>Recover what still slips through</h3><p>Every final invoice and true-up is audited automatically, and anything off becomes a dispute-ready packet you can send yourself.</p></div>
     </div>
-    <div class="stakes">
-      <div class="stake-card">
-        <span class="stake-eyebrow">With an audit</span>
-        <p>Every make-ready dollar goes toward the network, or comes back to you if it didn't belong on the invoice in the first place.</p>
+    <div class="incl reveal">
+      <span class="il">Every plan includes</span>
+      <ul><li>Automatic estimate + invoice checks</li><li>Dispute-ready packets</li><li>Deadline tracking</li><li>Portfolio benchmarking</li><li>Cancel anytime</li></ul>
+    </div>
+    <div class="reverser reveal">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+      <p>Start with zero risk: <b>your first month of monitoring is credited against your first recovery</b>, so getting started costs you nothing out of pocket.</p>
+    </div>
+    <div class="tiers" style="margin-top:24px;">
+      <div class="tier reveal">
+        <span class="tname">Starter</span>
+        <div class="tprice">From $199<span> / mo + 20%</span></div>
+        <p class="tdesc">For a single active build with one pole owner.</p>
+        <ul><li><span class="tk">&check;</span> Up to 1,000 poles monitored</li><li><span class="tk">&check;</span> 1 pole owner or utility</li><li><span class="tk">&check;</span> 20% recovery share</li><li><span class="tk">&check;</span> <span class="tdelta">Everything above, always on</span></li></ul>
+        <a class="btn btn-ghost-dark" href="#check">Start with Starter</a>
       </div>
-      <div class="stake-card neg">
-        <span class="stake-eyebrow">Without one</span>
-        <p>Overcharges sit quietly on invoices, unrecovered and unnoticed, funded out of the same budget meant to reach the next unserved location.</p>
+      <div class="tier himon reveal">
+        <span class="tname">Regional</span>
+        <div class="tprice">From $499<span> / mo + 18%</span></div>
+        <p class="tdesc">For a multi-utility build at BEAD or RDOF scale.</p>
+        <ul><li><span class="tk">&check;</span> Up to 5,000 poles monitored</li><li><span class="tk">&check;</span> Up to 3 pole owners</li><li><span class="tk">&check;</span> Reduced 18% recovery share</li><li><span class="tk">&check;</span> <span class="tdelta">Everything in Starter, plus</span> cross-utility benchmarking</li><li><span class="tk">&check;</span> First month credited to your first recovery</li></ul>
+        <a class="btn btn-primary" href="#check">Choose Regional <span class="arrow">&rarr;</span></a>
       </div>
+      <div class="tier reveal">
+        <span class="tname">Portfolio</span>
+        <div class="tprice">From $999<span> / mo + 15%</span></div>
+        <p class="tdesc">For a full portfolio across many utilities.</p>
+        <ul><li><span class="tk">&check;</span> Unlimited poles monitored</li><li><span class="tk">&check;</span> Unlimited pole owners</li><li><span class="tk">&check;</span> Lowest 15% recovery share</li><li><span class="tk">&check;</span> <span class="tdelta">Everything in Regional, plus</span> your whole portfolio as one view</li></ul>
+        <a class="btn btn-ghost-dark" href="#check">Choose Portfolio</a>
+      </div>
+    </div>
+    <p class="founding reveal">Founding-client pricing, shown as "from" while we bring on our first monitored builds. No calls, no meetings, cancel anytime.</p>
+  </div>
+</section>
+
+<section class="programs">
+  <div class="wrap">
+    <div>
+      <span class="pt">Built for the builders funded now</span>
+      <h3>Whatever is funding your build, the make-ready bill still needs a check.</h3>
+    </div>
+    <div class="prog-chips">
+      <span>BEAD subgrantees</span><span>RDOF</span><span>ARPA / Capital Projects Fund</span><span>Tribal Broadband</span><span>Electric cooperatives</span><span>Municipal broadband</span>
     </div>
   </div>
 </section>
 
-<hr class="divider">
-
-<section id="model">
+<section class="founder rule-top">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">The model</span>
-      <h2>Right now: free. Going forward: you only pay from what's recovered.</h2>
-      <p>PoleProof is running a small number of free concierge audits to validate the model with real invoices before anything is automated or scaled. There's no subscription to sign up for today &mdash; just send a document and see what comes back.</p>
+    <span class="eyebrow reveal">Why PoleProof exists</span>
+    <h2 class="reveal" style="margin-top:12px;">You should keep the money that is yours.</h2>
+    <div class="reveal">
+      <p>I spent my career on the building side of fiber, and I watched the same thing happen on project after project. The pole owner writes the make-ready estimate, performs the work, and sends the invoice, and the builder has no independent way to know whether any of it is correct. The numbers ran high, sometimes far past what the rules allow, and there was never enough time to challenge every line.</p>
+      <p>That is a broken arrangement. The party you pay is the same party that decides what you owe, and it grades its own math. Every finding PoleProof returns is tied to a source you can point to: the specific clause in your agreement, the FCC Part 1 Subpart J cost-allocation rule, or the regional benchmark. Nothing is asserted without a citation.</p>
+      <p>PoleProof is the independent check I always wanted on that side of the table. You risk nothing to find out. Find nothing, owe nothing. Find something, and you keep the larger share.</p>
+      <p class="sig">Founder</p>
+      <p class="sigrole">PoleProof</p>
     </div>
   </div>
 </section>
 
-<hr class="divider">
-
-<section id="trust">
+<section id="faq" class="rule-top">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Why trust it</span>
-      <h2>Built on the rules, not a black box.</h2>
-    </div>
-    <div class="trust-grid">
-      <div class="trust-card">
-        <h3>Grounded in the actual rules</h3>
-        <p>Every finding cites the specific agreement section or federal/state cost-allocation rule it's based on &mdash; nothing is asserted without a citation back to the source.</p>
-      </div>
-      <div class="trust-card">
-        <h3>Confidential by default</h3>
-        <p>Documents you send are reviewed solely to produce your findings report and are not shared beyond that purpose.</p>
-      </div>
-      <div class="trust-card">
-        <h3>Honest about scope</h3>
-        <p>Every report states plainly what was and wasn't reviewed. This is a factual audit finding, not a legal filing &mdash; your own counsel handles anything that needs to be filed.</p>
-      </div>
+    <span class="eyebrow reveal">Questions</span>
+    <h2 class="reveal" style="margin-top:12px;font-size:30px;">Straight answers.</h2>
+    <div class="faq-list reveal">
+      <details open><summary>What does it cost? <span class="pm">+</span></summary><div class="ans">The first single-invoice check is free. A full recovery audit runs on contingency, a share of what you recover or avoid, with nothing upfront. If we find nothing, you pay nothing.</div></details>
+      <details><summary>How do you check invoices without human reviewers? <span class="pm">+</span></summary><div class="ans">Every invoice is parsed and checked against your signed agreement, FCC Part 1 Subpart J cost-allocation rules, and a regional benchmark dataset that grows with every audit we run. The pipeline runs the same way whether it's your first invoice or your thousandth.</div></details>
+      <details><summary>Do I need to talk to anyone to get started? <span class="pm">+</span></summary><div class="ans">No. You sign up online, upload your documents, and get your results by email. There's no call, no meeting, and no sales conversation at any tier, including Managed Monitoring.</div></details>
+      <details><summary>What happens after you find an overcharge? <span class="pm">+</span></summary><div class="ans">You get a dispute-ready packet by email: the specific line items, the rule or benchmark each one violates, and the corrected amount. It's ready to send to the pole owner yourself.</div></details>
+      <details><summary>Which monitoring plan is right for me? <span class="pm">+</span></summary><div class="ans">Pick by the size of your build. Starter covers a single build up to 1,000 poles with one pole owner. Regional covers up to 5,000 poles across as many as three pole owners, which fits most publicly funded builds, at an 18% share. Portfolio covers unlimited poles and pole owners at 15%. Move up as your build grows; your first month is credited against your first recovery.</div></details>
+      <details><summary>Is my invoice and agreement data kept confidential? <span class="pm">+</span></summary><div class="ans">Yes. Your raw documents and anything identifying you are never shared with other clients or with pole owners. We use only de-identified, aggregated data points to improve the regional benchmark that strengthens every client's audit. Full detail is in our <a href="privacy.html">Privacy Policy</a>.</div></details>
     </div>
   </div>
 </section>
 
-<hr class="divider">
-
-<section id="faq">
+<section id="check" class="rule-top">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">FAQ</span>
-      <h2>Common questions, answered plainly.</h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item">
-        <h3>What does PoleProof do?</h3>
-        <p>PoleProof reviews make-ready and pole attachment invoices or estimates against your signed pole attachment agreement and the cost-allocation rules that actually apply &mdash; 47 U.S.C. &sect;224 and 47 CFR Part 1, Subpart J for FCC-regulated poles, or the applicable state rule for cooperative and municipal poles &mdash; and returns a dispute-ready findings report.</p>
+    <span class="eyebrow reveal">Get started</span>
+    <h2 class="reveal" style="margin-top:12px;font-size:30px;">Create your account and run your first free check.</h2>
+    <p class="reveal" style="color:var(--grey);max-width:64ch;margin-top:12px;">No calls, no meetings. Create an account, forward or upload one estimate or invoice, and your first check is free. Already holding a document? Forward it to <a href="mailto:audit@getpoleproof.com">audit@getpoleproof.com</a> and we open your audit automatically.</p>
+    <div class="account-grid">
+      <div class="acard reveal">
+        <h3>Create your account</h3>
+        <p>Business use only. Use your company email so we can verify your domain.</p>
+        <form id="signupForm" aria-label="Create your account">
+          <div class="field"><label for="suName">Full name</label><input type="text" id="suName" autocomplete="name" required></div>
+          <div class="field"><label for="suCompany">Company</label><input type="text" id="suCompany" autocomplete="organization" required></div>
+          <div class="field"><label for="suEmail">Work email</label><input type="email" id="suEmail" autocomplete="email" placeholder="you@company.com" required></div>
+          <div class="field"><label for="suPass">Create a password</label><input type="password" id="suPass" autocomplete="new-password" minlength="10" required></div>
+          <label class="consent"><input type="checkbox" id="suAgree" required> I have authority to act for my company, and I agree to the <a href="terms.html">Terms of Service</a>, <a href="service-agreement.html">Client Service Agreement</a>, and <a href="privacy.html">Privacy Policy</a>.</label>
+          <button class="btn btn-primary" type="submit">Create account and run my free check <span class="arrow">&rarr;</span></button>
+          <p class="form-msg" id="suMsg">Account sign-up opens when the audit engine goes live. In the meantime, forward a document to audit@getpoleproof.com to start your free check.</p>
+        </form>
       </div>
-      <div class="faq-item">
-        <h3>How much does an audit cost right now?</h3>
-        <p>Nothing. PoleProof is running a small number of free concierge audits to validate the model with real invoices before anything is automated or scaled. There's no subscription and no obligation.</p>
-      </div>
-      <div class="faq-item">
-        <h3>What do I need to send to get an audit?</h3>
-        <p>One invoice or cost estimate, plus your signed pole attachment agreement. Prior invoices help but aren't required.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Can you review an estimate before I pay it, or only invoices I've already received?</h3>
-        <p>Both. Review an estimate before you pay, or audit an invoice you've already received &mdash; either works.</p>
-      </div>
-      <div class="faq-item">
-        <h3>How long does an audit take?</h3>
-        <p>A findings report typically comes back within 10 business days.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Is a findings report the same as a legal filing?</h3>
-        <p>No. It's a factual and contractual review, not legal advice or a legal filing. If you decide to dispute a charge with the FCC or a state regulator, that filing should be prepared by your own counsel.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Who is PoleProof for?</h3>
-        <p>Fiber ISPs, electric cooperatives, municipal broadband builders, and BEAD subgrantees working through make-ready and pole attachment costs.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Is my data kept confidential?</h3>
-        <p>Yes. Documents you send are reviewed solely to produce your findings report and aren't shared beyond that purpose, other than in de-identified, aggregated form to improve PoleProof's benchmark data. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+      <div class="acard signin reveal" id="login">
+        <h3>Sign in</h3>
+        <p>Your audits, recovered totals, and dispute deadlines, all in one place.</p>
+        <form id="loginForm" aria-label="Sign in">
+          <div class="field"><label for="liEmail">Work email</label><input type="email" id="liEmail" autocomplete="email" placeholder="you@company.com" required></div>
+          <div class="field"><label for="liPass">Password</label><input type="password" id="liPass" autocomplete="current-password" required></div>
+          <div class="signin-row"><a class="forgot" href="mailto:hello@getpoleproof.com?subject=Password%20help">Forgot password?</a></div>
+          <button class="btn btn-ghost-dark" type="submit">Sign in</button>
+          <p class="form-msg" id="liMsg">Accounts activate when the audit engine goes live. We will email you the moment sign-in opens.</p>
+        </form>
+        <div class="acct-prev">
+          <strong>What you'll see when you sign in</strong>
+          <ul><li>Every audit and its findings in one view</li><li>Your running recovered and avoided total</li><li>Upcoming dispute and refund deadlines</li><li>Your portfolio's benchmark position</li></ul>
+        </div>
       </div>
     </div>
+    <p class="legal-note reveal">By creating an account or signing in you agree to our <a href="terms.html">Terms of Service</a>, <a href="service-agreement.html">Client Service Agreement</a>, and <a href="privacy.html">Privacy Policy</a>.</p>
   </div>
 </section>
 
-<section id="contact">
+<section class="ctaband">
   <div class="wrap">
-    <div class="cta-band">
-      <h2>Send one invoice. See what we find.</h2>
-      <p>No cost, no obligation, no portal to set up. Just an invoice or estimate, your attachment agreement, and ten business days.</p>
-      <a class="btn" href="mailto:hello@getpoleproof.com?subject=Free%20concierge%20audit" style="background:var(--teal-dark);">Email hello@getpoleproof.com</a>
+    <h2>See what's on your next invoice.</h2>
+    <p>One free check. No account, no commitment.</p>
+    <a class="btn btn-primary" href="#check">Run a free check <span class="arrow">&rarr;</span></a>
+  </div>
+</section>
+
+<section class="staytouch">
+  <div class="wrap staytouch-row">
+    <div>
+      <span class="eyebrow">Stay in touch</span>
+      <h3 style="margin-top:8px;font-size:19px;">Pole attachment and make-ready news, a few times a year.</h3>
+      <p style="color:var(--grey);font-size:13.5px;margin:6px 0 0;max-width:48ch;">Regulatory changes, rate rulings, and anything worth knowing if you deal with pole invoices. Not sales emails.</p>
     </div>
+    <form class="capture-form" aria-label="Newsletter signup">
+      <input type="email" placeholder="you@company.com" required aria-label="Email address">
+      <button class="btn btn-primary" type="submit">Sign up</button>
+    </form>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div>
-      <div class="f-logo">PoleProof</div>
-      <div class="f-note">&copy; 2026 PoleProof. A service of PoleProof LLC.</div>
+    <div class="f-brand">
+      <svg viewBox="0 0 300 300" width="30" height="30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="lgf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#241a54"/><stop offset="1" stop-color="#150f2c"/></linearGradient></defs><rect width="300" height="300" rx="66" fill="url(#lgf)"/><g transform="translate(150,150) scale(1.2) translate(-161.5,-154.5)"><circle cx="150" cy="140" r="84" fill="none" stroke="#0ea5a3" stroke-width="11"/><g stroke="#f1eee7" stroke-linecap="round" fill="#f1eee7"><line x1="150" y1="110" x2="150" y2="192" stroke-width="12"/><line x1="108" y1="118" x2="192" y2="118" stroke-width="10"/><line x1="120" y1="142" x2="180" y2="142" stroke-width="9"/></g><circle cx="214" cy="210" r="43" fill="#150f2c"/><circle cx="214" cy="210" r="34" fill="#0ea5a3"/><path d="M197 210 L209 223 L233 193" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+      <span class="wm">Pole<span>Proof</span></span>
     </div>
-    <div class="f-links">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="mailto:hello@getpoleproof.com">hello@getpoleproof.com</a>
-    </div>
+    <span class="flinks"><a href="mailto:hello@getpoleproof.com">hello@getpoleproof.com</a><a href="#login">Sign in</a><a href="legal.html">Legal</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></span>
   </div>
+  <div class="wrap" style="margin-top:14px;font-size:12px;color:rgba(241,238,231,.45);">&copy; 2026 PoleProof &middot; A service of PoleProof LLC &middot; Independent audits for the attacher's side of the pole</div>
 </footer>
 
+<script src="app.js"></script>
 </body>
 </html>
