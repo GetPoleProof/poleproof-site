@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Scroll reveal
   var els = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
@@ -25,10 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
       rateValEl.textContent = rate + '%';
       var found = spend * (rate / 100);
       var fee = found * FEE_SHARE;
-      var net = found - fee;
       foundEl.textContent = money(found);
       feeEl.textContent = money(fee);
-      netEl.textContent = money(net);
+      netEl.textContent = money(found - fee);
     }
     function formatSpend() {
       var digits = spendEl.value.replace(/[^0-9]/g, '');
@@ -40,15 +40,17 @@ document.addEventListener('DOMContentLoaded', function () {
     recalc();
   }
 
-  // Account forms are front-end only until the backend ships. Show an honest notice on submit.
-  [['signupForm', 'suMsg'], ['loginForm', 'liMsg']].forEach(function (pair) {
-    var form = document.getElementById(pair[0]);
-    var msg = document.getElementById(pair[1]);
-    if (form && msg) {
-      form.addEventListener('submit', function () {
+  // All forms are front-end only until the backend ships. Prevent submit (CSP blocks inline handlers)
+  // and show an honest notice on the account forms.
+  document.querySelectorAll('form').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var msgId = form.id === 'signupForm' ? 'suMsg' : (form.id === 'loginForm' ? 'liMsg' : null);
+      if (msgId) {
         if (form.checkValidity && !form.checkValidity()) { form.reportValidity(); return; }
-        msg.style.display = 'block';
-      });
-    }
+        var m = document.getElementById(msgId);
+        if (m) { m.style.display = 'block'; }
+      }
+    });
   });
 });
