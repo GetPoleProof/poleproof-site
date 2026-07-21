@@ -251,8 +251,9 @@ input[type=range]{width:100%;accent-color:var(--teal-d);height:4px;}
 .field input{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:6px;font-family:var(--body);font-size:14px;background:var(--paper);color:var(--indigo);}
 .signin .field input{background:#fff;}
 .field input:focus-visible{outline:2px solid var(--teal);outline-offset:1px;}
-.consent{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:var(--grey);margin:8px 0 16px;line-height:1.5;}
-.consent input{margin-top:2px;flex-shrink:0;}
+.consent{display:block;position:relative;padding-left:28px;font-size:12.5px;color:var(--grey);margin:10px 0 18px;line-height:1.7;}
+.consent input{position:absolute;left:0;top:3px;}
+.consent a{white-space:nowrap;}
 .consent a,.forgot,.acct-prev a,.legal-note a{color:var(--teal-d);}
 .acard .btn{width:100%;justify-content:center;}
 .signin-row{display:flex;justify-content:flex-end;margin:-4px 0 14px;}
@@ -306,7 +307,7 @@ footer .flinks a:first-child{margin-left:0;}
     <div>
       <span class="eyebrow" style="color:var(--teal-light);">Independent audits for the attacher's side of the pole</span>
       <h1>The utility writes your make-ready invoice. Then grades its own homework.</h1>
-      <p class="lede">PoleProof checks every make-ready estimate before you pay it and every invoice after you're billed, against your signed agreement, FCC Part 1 Subpart J rules, and a growing regional benchmark. Then it hands you a dispute-ready finding. On contingency. Nothing upfront.</p>
+      <p class="lede">PoleProof checks every make-ready estimate before you pay it and every invoice after you're billed, against your signed agreement, the applicable FCC cost-allocation rules, and a growing regional benchmark. Then it hands you a dispute-ready finding. On contingency. Nothing upfront.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#check">Run a free check <span class="arrow">&rarr;</span></a>
         <a class="btn btn-ghost" href="#how">See how it works</a>
@@ -339,7 +340,7 @@ footer .flinks a:first-child{margin-left:0;}
   <div class="wrap">
     <span class="eyebrow">The problem</span>
     <h2 style="margin-top:12px;">You have no independent way to check the bill.</h2>
-    <p>Pole owners write the make-ready estimate, perform the work, and issue the final invoice, with no outside party checking their math against the rules that are supposed to govern it. Overcharges, duplicate line items, and pole-replacement costs shifted onto the wrong party are common and hard to catch without reading every invoice against your agreement and Subpart J, line by line, on every pole, every time.</p>
+    <p>Pole owners write the make-ready estimate, perform the work, and issue the final invoice, with no outside party checking their math against the rules that are supposed to govern it. Overcharges, duplicate line items, and pole-replacement costs shifted onto the wrong party are common and hard to catch without reading every invoice against your agreement and the governing rules, line by line, on every pole, every time.</p>
   </div>
 </section>
 
@@ -349,7 +350,7 @@ footer .flinks a:first-child{margin-left:0;}
     <h2 class="reveal" style="margin-top:12px;font-size:30px;">Forward it or upload it. Get results. Nothing in between.</h2>
     <div class="steps">
       <div class="step reveal"><div class="n">01</div><h3>Send the estimate or invoice</h3><p>Forward it to audit@getpoleproof.com with your signed agreement, or upload it. Review before you pay, or audit after you're billed. That is the whole ask.</p></div>
-      <div class="step reveal"><div class="n">02</div><h3>The automated audit runs</h3><p>Every line item is checked against your agreement, FCC Part 1 Subpart J cost-allocation rules, and the regional benchmark. No one reviews it manually before you see it.</p></div>
+      <div class="step reveal"><div class="n">02</div><h3>The automated audit runs</h3><p>Every line item is checked against your agreement, the applicable FCC cost-allocation rules, and the regional benchmark. No one reviews it manually before you see it.</p></div>
       <div class="step reveal"><div class="n">03</div><h3>Your finding lands in your inbox</h3><p>A plain-language summary and, where applicable, a dispute-ready packet with citations and the corrected amount, ready to send the pole owner yourself.</p></div>
     </div>
   </div>
@@ -382,7 +383,7 @@ footer .flinks a:first-child{margin-left:0;}
   <div class="wrap">
     <span class="eyebrow reveal">Estimate your savings</span>
     <h2 class="reveal" style="margin-top:12px;font-size:30px;">See what this could mean for your invoices.</h2>
-    <p class="reveal" style="color:var(--grey);max-width:62ch;margin-top:12px;">An estimate you control, based on FCC Part 1 Subpart J cost-allocation rules, not a claim about any client's results. Set your own numbers.</p>
+    <p class="reveal" style="color:var(--grey);max-width:62ch;margin-top:12px;">An estimate you control, based on the applicable FCC cost-allocation rules, not a claim about any client's results. Set your own numbers.</p>
     <div class="calc-grid reveal">
       <div>
         <div class="calc-field">
@@ -457,7 +458,7 @@ footer .flinks a:first-child{margin-left:0;}
     <h2 class="reveal" style="margin-top:12px;font-size:30px;">Catch it before you pay. Recover it after you're billed.</h2>
     <p class="lede reveal">Managed Monitoring watches both moments where a pole owner can overcharge you, automatically and continuously, so nothing slips past on either side of the bill.</p>
     <div class="moments">
-      <div class="moment reveal"><span class="mtag">Before you pay &middot; the watchdog</span><h3>Stop the overcharge at the estimate</h3><p>Every estimate is checked against your agreement and Subpart J before a dollar leaves your account. The strongest save is the overcharge that never happens.</p></div>
+      <div class="moment reveal"><span class="mtag">Before you pay &middot; the watchdog</span><h3>Stop the overcharge at the estimate</h3><p>Every estimate is checked against your agreement and the applicable cost-allocation rules before a dollar leaves your account. The strongest save is the overcharge that never happens.</p></div>
       <div class="moment reveal"><span class="mtag">After you're billed &middot; the audit</span><h3>Recover what still slips through</h3><p>Every final invoice and true-up is audited automatically, and anything off becomes a dispute-ready packet you can send yourself.</p></div>
     </div>
     <div class="incl reveal">
