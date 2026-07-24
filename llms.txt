@@ -43,6 +43,10 @@ Right now, PoleProof is running a small number of free concierge audits to valid
 ## Pages
 
 - [Home](https://getpoleproof.com/): What PoleProof does, how the audit works, the model, and FAQs.
+- [How PoleProof researches and verifies](https://getpoleproof.com/how-poleproof-researches-and-verifies.html): The primary-source, state-by-state method and confidence grading behind every finding.
+- [Section 224 and Subpart J explained](https://getpoleproof.com/section-224-subpart-j-explained.html): The federal pole attachment rules, the 2026 tiered make-ready timelines, and self-help.
+- [BEAD make-ready cost recovery](https://getpoleproof.com/bead-make-ready-cost-recovery.html): Why make-ready overcharges hit a fixed BEAD grant hardest, and the cost-causation rules that limit them.
+- [Cooperative and municipal pole rates after BEAD](https://getpoleproof.com/cooperative-municipal-pole-rates-after-bead.html): How the November 2025 BEAD terms pull co-op and municipal poles under FCC rules.
 - [Privacy Policy](https://getpoleproof.com/privacy.html): How client documents and data are handled.
 - [Terms of Service](https://getpoleproof.com/terms.html): Terms for using PoleProof.
 
